@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Mocionero</title>
+</head>
+<body style="margin:0; background:#F7F8FA; font-family:'Segoe UI',Arial,sans-serif; color:#24395C; min-height:100vh; display:flex; flex-direction:column;">
+
+<div style="max-width:1500px; width:100%; margin:0 auto; padding:35px 25px 50px; box-sizing:border-box; flex:1;">
+
+  <!-- TÍTULO -->
+  <div style="text-align:center; margin-bottom:20px;">
+    <div style="font-family:Georgia,'Times New Roman',serif; font-size:34px; font-weight:bold; letter-spacing:4px; color:#24395C;">
+      MINI MOCIONERO
+    </div>
+    <div style="height:2px; width:90px; background:#C7A45A; margin:14px auto 0;"></div>
+  </div>
+
+  <!-- BOTÓN -->
+  <div style="text-align:center; margin-bottom:30px;">
+    <button id="botonAleatorio" style="background:#24395C; color:white; border:none; border-radius:8px; padding:13px 40px; font-family:'Segoe UI',Arial,sans-serif; font-size:15px; cursor:pointer;">
+      EMPEZAR
+    </button>
+  </div>
+
+  <!-- SEPARADOR -->
+  <div id="separador" style="display:none; align-items:center; gap:14px; margin:0 0 28px;">
+    <div style="height:1px; background:#D0D8E8; flex:1;"></div>
+    <div style="font-family:Georgia,'Times New Roman',serif; font-size:13px; letter-spacing:2px; color:#7A8799; text-transform:uppercase;">
+      Resultado
+    </div>
+    <div style="height:1px; background:#D0D8E8; flex:1;"></div>
+  </div>
+
+  <!-- TORNEO -->
+  <div id="caja-torneo" style="display: none; width:100%; margin-bottom:22px; background:#FFFFFF; border:1px solid #D0D8E8; border-radius:14px; padding:15px; box-sizing:border-box; text-align:center; font-family:Georgia,'Times New Roman',serif; font-size:18px; font-weight:bold; letter-spacing:1.5px; color:#24395C;">
+  </div>
+
+  <!-- CAJITAS -->
+  <div style="display:flex; flex-wrap:wrap; gap:22px; align-items:stretch;">
+
+    <!-- INFOSLIDE -->
+    <div id="caja-is" style="flex:1 1 300px; background:#FFFFFF; border:1px solid #D0D8E8; border-radius:14px; padding:24px; box-sizing:border-box; display:none;">
+      <div style="text-align:center; font-family:Georgia,'Times New Roman',serif; font-size:23px; font-weight:bold; letter-spacing:1.5px; color:#24395C; margin-bottom:12px;">
+        INFOSLIDE
+      </div>
+      <div style="height:2px; width:55px; background:#C7A45A; margin:0 auto 20px;"></div>
+      <div id="is" style="font-size:16px; line-height:1.8; color:#46566E; min-height:80px; text-align: justify;"></div>
+    </div>
+
+    <!-- MOCIÓN -->
+    <div id="caja-mocion" style="flex:1 1 300px; background:#24395C; border:1px solid #24395C; border-radius:14px; padding:24px; box-sizing:border-box; display:none;">
+      <div style="text-align:center; font-family:Georgia,'Times New Roman',serif; font-size:23px; font-weight:bold; letter-spacing:1.5px; color:#FFFFFF; margin-bottom:12px;">
+        MOCIÓN
+      </div>
+      <div style="height:2px; width:55px; background:#C7A45A; margin:0 auto 20px;"></div>
+      <div id="mocion" style="font-size:17px; line-height:1.8; color:#EEF3FA; min-height:80px; text-align: center;"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- PIE -->
+<div style="width:100%; box-sizing:border-box; text-align:center; margin-top:auto; padding:20px 25px; border-top:1px solid #D0D8E8; font-size:12px; letter-spacing:1px; color:#8A96A8;">
+  MINI MOCIONERO · CLUB DE DEBATE URJC
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
